@@ -1,0 +1,27 @@
+{
+  "name": "cypress-udemy-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open",
+    "test-electron": "cypress run --spec \"cypress/e2e/TC01_FirstScript.spec.cy.js\"",
+    "smoke-test": "cypress run --spec \"cypress/e2e/smokeTest/SmokeScript.spec.cy.js\"",
+    "test-electron-headed": "cypress run --headed",
+    "test-chrome": "cypress run --browser chrome",
+    "test-chrome-headed": "cypress run --browser chrome --headed",
+    "test-edge-headed": "cypress run --browser edge --headed",
+    "test-dashboard":"npx cypress run --record --key 85ca4078-089d-4ea7-a30a-e66d9a101798"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.7.1"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^2.0.1",
+    "neat-csv": "^5.2.0",
+    "xlsx": "^0.18.5"
+  }
+}

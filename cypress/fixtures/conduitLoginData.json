@@ -1,0 +1,6 @@
+{
+    "validEmail":"cypress@automation.co.za",
+    "validPassword":"test1234Cypress",
+    "invalidEmail":"playwright@awdio.co.za",
+    "invalidPassword":"test1234Cypress_wdio"
+}
