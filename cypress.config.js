@@ -3,7 +3,18 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   // screenshotOnRunFailure: false,
   // video: false,
-  projectId:'85ca4078-089d-4ea7-a30a-e66d9a101798',
+  projectId:'jxh8bg',
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions":{
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions":{
+      "reportDir": "cypress/reports/mocha",
+      "quiet":true,
+      "overwrite":false,
+      "html":false,
+      "json":true
+    }
+  },
   e2e: {
     setupNodeEvents(on, config) {
       return require('./cypress/plugins/index.js')(on, config)

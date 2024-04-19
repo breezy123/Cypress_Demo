@@ -1,3 +1,6 @@
+
+/// <reference types="Cypress" />
+
 import LandingPage from '../e2e/pages/landingPage'
 import LoginPage from '../e2e/pages/loginPage'
 import HomePage from '../e2e/pages/homePage'

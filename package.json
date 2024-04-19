@@ -5,13 +5,20 @@
   "main": "index.js",
   "scripts": {
     "open": "cypress open",
-    "test-electron": "cypress run --spec \"cypress/e2e/TC01_FirstScript.spec.cy.js\"",
-    "smoke-test": "cypress run --spec \"cypress/e2e/smokeTest/SmokeScript.spec.cy.js\"",
+    "test-electron": "cypress run --spec \"cypress\\e2e\\TC01_FirstScript.spec.cy.js\"",
+    "smoke-test": "cypress run --spec \"cypress\\e2e\\smokeTest\\*.cy.js\"",
     "test-electron-headed": "cypress run --headed",
     "test-chrome": "cypress run --browser chrome",
     "test-chrome-headed": "cypress run --browser chrome --headed",
     "test-edge-headed": "cypress run --browser edge --headed",
-    "test-dashboard":"npx cypress run --record --key 85ca4078-089d-4ea7-a30a-e66d9a101798"
+    "test-dashboard": "npx cypress run --record --key ee891063-0cb2-4a8d-8f6c-6e05b047d004",
+    "scripts":"cypress run --spec \"cypress\\e2e\\smokeTest\\TC01_FirstScript.spec.cy.js\"",
+    "clean:reports":"rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
+    "pretest": "npm run clean:reports",
+    "combine-reports": "mochawesome-merge ./cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
+    "generate-report": "merge cypress/reports/mochareports/reports.json -f report -o cypress/reports/mochareports",
+    "posttest": "npm run combine-reports && npm run generate-reports",
+    "test": "npm run scripts || npm run posttest"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +27,12 @@
     "cypress": "^13.7.1"
   },
   "devDependencies": {
+    "cypress-multi-reporters": "^1.6.4",
     "cypress-xpath": "^2.0.1",
+    "mocha": "^10.4.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
     "neat-csv": "^5.2.0",
     "xlsx": "^0.18.5"
   }
