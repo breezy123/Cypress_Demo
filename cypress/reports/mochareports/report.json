@@ -1,0 +1,285 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2024-04-21T18:21:10.860Z",
+    "end": "2024-04-21T18:21:51.760Z",
+    "duration": 40900
+  },
+  "results": [
+    {
+      "uuid": "aaf94a58-a433-4ea6-a0a0-6c539d0a199e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\smokeTest\\TC01_FirstScript.spec.cy.js",
+      "file": "cypress\\e2e\\smokeTest\\TC01_FirstScript.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "208de3e2-4651-47d2-bacb-ba26d3e796d8",
+          "title": "Login Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login Test using Conduit",
+              "fullTitle": "Login Functionality Login Test using Conduit",
+              "timedOut": null,
+              "duration": 4239,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://react-redux.realworld.io/');\ncy.get('a[href=\"#login\"]').click();\ncy.get('input[type=\"email\"]').type('cypress@automation.co.za');\ncy.get('input[type=\"password\"]').type('test1234Cypress');\ncy.get('button[type=\"submit\"]').click();\ncy.get('a[href=\"#settings\"]').click();\ncy.get('.btn.btn-outline-danger').click();",
+              "err": {},
+              "uuid": "ea59f804-67f8-47ad-ab95-2bd1c39f7620",
+              "parentUUID": "208de3e2-4651-47d2-bacb-ba26d3e796d8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ea59f804-67f8-47ad-ab95-2bd1c39f7620"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4239,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "41bbc212-e0d4-4709-b97f-bf7df5100905",
+      "title": "",
+      "fullFile": "cypress\\e2e\\smokeTest\\TC02_RadioButton.spec.cy.js",
+      "file": "cypress\\e2e\\smokeTest\\TC02_RadioButton.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c678e671-3d5e-4173-a79f-2088175b9172",
+          "title": "Radio Button Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Handling different Radio buttons",
+              "fullTitle": "Radio Button Functionality Handling different Radio buttons",
+              "timedOut": null,
+              "duration": 5132,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Basic Radio Button\ncy.visit('https://demos.jquerymobile.com/1.4.5/checkboxradio-radio/');\ncy.get('#radio-choice-0a').should(\"not.be.checked\").click({\n  force: true\n});\ncy.get('#radio-choice-0b').should(\"not.be.checked\").click({\n  force: true\n});\n//the force true is used in case the actioned element is covered/isn't in plain sight\n//Moden Radio Button\ncy.get('#radio-choice-h-2b').should(\"not.be.checked\").click({\n  force: true\n});\ncy.get('#radio-choice-h-2c').should(\"not.be.checked\").click({\n  force: true\n});\n// cypressautomation\n// cypress@automation.co.za\n// test1234Cypress",
+              "err": {},
+              "uuid": "e83dc181-c54c-4838-b580-0dfda8c1e164",
+              "parentUUID": "c678e671-3d5e-4173-a79f-2088175b9172",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e83dc181-c54c-4838-b580-0dfda8c1e164"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5132,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "11f1d995-43b5-4b1c-a263-d5d129b7e713",
+      "title": "",
+      "fullFile": "cypress\\e2e\\smokeTest\\TC03_CheckBox.spec.cy.js",
+      "file": "cypress\\e2e\\smokeTest\\TC03_CheckBox.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a9933789-b398-4bd0-8e8f-e7226567b518",
+          "title": "Checkbox Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Handling different CheckBoxes",
+              "fullTitle": "Checkbox Functionality Handling different CheckBoxes",
+              "timedOut": null,
+              "duration": 8649,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demos.jquerymobile.com/1.4.5/checkboxradio-checkbox/');\ncy.get('#checkbox-v-2xa').should('not.be.checked').check({\n  force: true\n}).should('be.checked');\ncy.get('#checkbox-v-2b').should('not.be.checked').uncheck({\n  force: true\n}).should('not.be.checked');\ncy.get('#checkbox-v-2c').should('not.be.checked').check({\n  force: true\n}).should('be.checked');\ncy.get('#checkbox-h-2a').should('not.be.checked').check({\n  force: true\n}).should('be.checked');\ncy.get('#checkbox-h-2b').should('not.be.checked').uncheck({\n  force: true\n}).should('not.be.checked');\ncy.get('#checkbox-h-2c').should('not.be.checked').check({\n  force: true\n}).should('be.checked');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#checkbox-v-2xa`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#checkbox-v-2xa`, but never found it.\n    at Context.eval (webpack://cypress-udemy-course/./cypress/e2e/smokeTest/TC03_CheckBox.spec.cy.js:8:34)",
+                "diff": null
+              },
+              "uuid": "c7e90b9a-695f-405c-9ed2-0f13a4dc19ee",
+              "parentUUID": "a9933789-b398-4bd0-8e8f-e7226567b518",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c7e90b9a-695f-405c-9ed2-0f13a4dc19ee"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8649,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "9cff8cfd-39c2-4bf1-96b4-4d48cd9abf2b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\smokeTest\\SmokeScript.spec.cy.js",
+      "file": "cypress\\e2e\\smokeTest\\SmokeScript.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d67258c1-daac-4519-bc34-722c659e2d7f",
+          "title": "Login Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login Test using Conduit",
+              "fullTitle": "Login Functionality Login Test using Conduit",
+              "timedOut": null,
+              "duration": 5330,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://react-redux.realworld.io/');\ncy.get('a[href=\"#login\"]').click();\ncy.get('input[type=\"email\"]').type('cypress@automation.co.za');\ncy.get('input[type=\"password\"]').type('test1234Cypress');\ncy.get('button[type=\"submit\"]').click();\ncy.get('a[href=\"#settings\"]').click();\ncy.get('.btn.btn-outline-danger').click();\n// cypressautomation\n// cypress@automation.co.za\n// test1234Cypress",
+              "err": {},
+              "uuid": "0bc838cf-e22d-42d9-9f4d-d19af7ff2313",
+              "parentUUID": "d67258c1-daac-4519-bc34-722c659e2d7f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0bc838cf-e22d-42d9-9f4d-d19af7ff2313"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5330,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
